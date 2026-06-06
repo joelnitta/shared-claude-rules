@@ -19,6 +19,7 @@ paths:
 - Put pipeline definitions in `_targets.R`.
 - Put all functions in `R/functions.R`, even if the function is used somewhere else than the main pipeline
 - Put all package load calls in `R/packages.R` then source this file (do not use the `packages` argument of `tar_option_set`)
+- Targets and globals must have unique names. In other words, don't use the same name for a function and a target.
 
 ## Multi-workflow projects
 
